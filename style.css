@@ -1,0 +1,196 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #f4eeee;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #524e4e;
+  text-decoration: none;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.section {
+  background-color: #9e9a9a;
+}
+
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+#hero {
+  background-image: url('https://images.unsplash.com/photo-1615938165708-feda49ca470c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3778&q=80');
+  background-size: cover;
+  background-position: center;
+  color: #fcf3f3;
+  text-align: center;
+  padding: 200px 0;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #666;
+}
+
+/* Material Design Button */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #666;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slideInFromLeft {
+  animation: slideInFromLeft 1s ease-in-out;
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slideInFromRight {
+  animation: slideInFromRight 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fadeInUp {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.pulse {
+  animation: pulse 1s ease-in-out alternate infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.typing-text {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 1s steps(40) forwards;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  #hero {
+    padding: 150px 0;
+  }
+}
+.contact-image {
+  width: 200px;
+  height: auto;
+  border-radius: 20%;
+  margin-right: 20px;
+}
